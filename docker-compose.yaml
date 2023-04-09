@@ -1,0 +1,13 @@
+version: "3.6"
+services:
+  unciv:
+    image: containers.cerno.ch/handy/uniciv:4.5.17
+    volumes:
+      - config:/server/config
+    networks:
+      - proxy-sites
+volumes:
+  config:
+networks:
+  proxy-sites:
+    external: true

@@ -3,7 +3,7 @@ services:
   unciv:
     image: containers.cerno.ch/handy/uniciv:4.5.17
     volumes:
-      - config:/server/config
+      - config:/server/MultiplayerFiles
     networks:
       - proxy-sites
 volumes:
